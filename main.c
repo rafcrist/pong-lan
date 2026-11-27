@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     int     score2 = 0;
     
     const float initialBallSpeed = 6.0f;
-    const float maxBallSpeed = 14.0f;
+    const float maxBallSpeed = 18.0f;
     // As proporcoes 4/5 e 3/5 preservam a velocidade total na diagonal.
     const float diagonalX = 0.8f;
     const float diagonalY = 0.6f;
@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
 
             if (CheckCollisionCircleRec(ballPosition, BALL_RADIUS, targetPaddle))
             {
-                ballSpeed *= 1.05f;
+                ballSpeed *= 1.15f;
                 if (ballSpeed > maxBallSpeed)
                     ballSpeed = maxBallSpeed;
 
